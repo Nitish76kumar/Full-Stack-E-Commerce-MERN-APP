@@ -17,10 +17,10 @@ app.use(cookieParser());
 
 app.use("/api", router);
 
-const PORT = process.env.PORT || 8000;
+const port = process.env.PORT || 8000;
 
 connectDB().then(() => {
-  app.listen(PORT, () => {
+  app.listen(port, () => {
     console.log("connnect to DB");
     console.log("Server is running " + PORT);
   });
